@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/17 11:09:26 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 14:43:45 by gbeauman         ###   ########.fr       */
+/*   Created: 2021/11/18 13:08:52 by gbeauman          #+#    #+#             */
+/*   Updated: 2021/11/18 14:46:47 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	ft_printf(const char *str, ...)
+void	ft_putnbr(int num)
 {
-	va_list	argptr;
-	int	i;
-	
-	i = 0;
-	va_start(argptr, str);
-	while (str[i])
+	if (num >= 0 && num <= 9)
+		ft_print_d(num);
+	else
 	{
-		if (str[i] == '%')
-		{
-			i++;
-			ft_check(str[i], argptr);
-		}
-		else
-		{
-			write (1, &str[i], 1);
-		}
-		i++;
+		ft_putnbr(num / 10);
+		ft_putnbr(num % 10);
 	}
-	va_end(argptr);
-	return (i);
 }

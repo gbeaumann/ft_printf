@@ -6,13 +6,18 @@
 #    By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/17 09:30:37 by gbeauman          #+#    #+#              #
-#    Updated: 2021/11/17 11:14:58 by gbeauman         ###   ########.fr        #
+#    Updated: 2021/11/18 13:19:49 by gbeauman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libftprintf.a
 CC = gcc
 SRC = main.c\
-	  ft_printf.c
+	  ft_printf.c\
+	  ft_check.c\
+	  ft_print_s.c\
+	  ft_print_c.c\
+	  ft_print_d.c\
+	  ft_putnbr.c
 CFLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.c=.o)
 
