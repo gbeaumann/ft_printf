@@ -6,7 +6,7 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 11:09:26 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 15:43:22 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/18 16:19:55 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
@@ -35,5 +35,5 @@ int	ft_printf(const char *str, ...)
 		i++;
 	}
 	va_end(argptr);
-	return (index + 1);
+	return (index);
 }
