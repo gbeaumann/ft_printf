@@ -6,17 +6,18 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 10:02:45 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 14:46:11 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/18 15:38:33 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-void	ft_check(char check, va_list argptr)
+int	ft_check(char check, va_list argptr, int index)
 {
 	if (check == 's')
-		ft_print_s(va_arg(argptr, char *));
+		index = ft_print_s(va_arg(argptr, char *), index);
 	else if (check == 'c')
-		ft_print_c(va_arg(argptr, int));
+		index = ft_print_c(va_arg(argptr, int), index);
 	else if (check == 'd')
-		ft_putnbr(va_arg(argptr, int));
+		index = ft_putnbr(va_arg(argptr, int), index);
+	return (index);
 }

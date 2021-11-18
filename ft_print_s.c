@@ -6,19 +6,21 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 09:54:14 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 14:46:30 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/18 15:16:41 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-void	ft_print_s(char *s)
+int	ft_print_s(char *s, int index)
 {
-	int i2;
+	int i;
 
-	i2 = 0;
-	while (s[i2])
+	i = 0;
+	while (s[i])
 	{
-		write (1, &s[i2], 1);
-		i2++;
+		write (1, &s[i], 1);
+		i++;
+		index++;
 	}
+	return (index);
 }

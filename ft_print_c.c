@@ -6,14 +6,16 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:38:30 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 14:45:39 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/18 15:28:40 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-void	ft_print_c(int ch)
+int	ft_print_c(int ch, int index)
 {
 	char	c;
 	c = ch;
 	write (1, &c, 1);
+	index++;
+	return (index);
 }

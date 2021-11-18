@@ -6,7 +6,7 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 09:27:28 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 14:44:24 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/18 15:29:26 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_PRINTF_H
@@ -18,10 +18,10 @@
 
 int		main();
 int		ft_printf(const char *str, ...);
-void	ft_check(char check, va_list argptr);
-void	ft_print_s(char *s);
-void	ft_print_c(int ch);
+int		ft_check(char check, va_list argptr, int index);
+int		ft_print_s(char *s, int index);
+int		ft_print_c(int ch, int index);
 void	ft_print_d(int num);
-void	ft_putnbr(int num);
+int		ft_putnbr(int num, int index);
 
 #endif
