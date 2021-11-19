@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putnbr_u.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/17 10:56:24 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/19 11:31:07 by gbeauman         ###   ########.fr       */
+/*   Created: 2021/11/19 10:59:16 by gbeauman          #+#    #+#             */
+/*   Updated: 2021/11/19 11:04:02 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	main()
+int	ft_putnbr_u(unsigned int num, int index)
 {
-	printf("%i\n", printf("Hello %x, %s ca va%c\n", 17, "comment", '?'));
-	ft_printf("%i\n", ft_printf("Hello %u, %s ca va%c\n", 14, "comment", '?'));
-	return (0);
+	if (num >= 0 && num <= 9)
+		index = ft_print_u(num, index);
+	else
+	{
+		index = ft_putnbr_u(num / 10, index + 1);
+		ft_putnbr_u(num % 10, index);
+	}
+	return (index);
 }

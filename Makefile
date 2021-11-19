@@ -6,7 +6,7 @@
 #    By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/17 09:30:37 by gbeauman          #+#    #+#              #
-#    Updated: 2021/11/18 13:19:49 by gbeauman         ###   ########.fr        #
+#    Updated: 2021/11/19 11:00:45 by gbeauman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libftprintf.a
@@ -16,8 +16,10 @@ SRC = main.c\
 	  ft_check.c\
 	  ft_print_s.c\
 	  ft_print_c.c\
-	  ft_print_d.c\
-	  ft_putnbr.c
+	  ft_print_num.c\
+	  ft_putnbr.c\
+	  ft_print_u.c\
+	  ft_putnbr_u.c
 CFLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.c=.o)
 

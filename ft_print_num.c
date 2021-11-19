@@ -6,12 +6,12 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:51:21 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 16:26:32 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:34:36 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	ft_print_d(int num, int index)
+int	ft_print_num(int num, int index)
 {
 	char c;
 

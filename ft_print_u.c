@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_u.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/17 10:56:24 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/19 11:31:07 by gbeauman         ###   ########.fr       */
+/*   Created: 2021/11/19 10:48:57 by gbeauman          #+#    #+#             */
+/*   Updated: 2021/11/19 10:58:41 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	main()
+int	ft_print_u(unsigned int num, int index)
 {
-	printf("%i\n", printf("Hello %x, %s ca va%c\n", 17, "comment", '?'));
-	ft_printf("%i\n", ft_printf("Hello %u, %s ca va%c\n", 14, "comment", '?'));
-	return (0);
+	char	c;
+
+	c = num + 48;
+	write (1, &c, 1);
+	index++;
+	return (index);
 }
