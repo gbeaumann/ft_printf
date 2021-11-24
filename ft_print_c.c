@@ -6,7 +6,7 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:38:30 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 15:28:40 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/24 10:04:00 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
@@ -14,6 +14,7 @@
 int	ft_print_c(int ch, int index)
 {
 	char	c;
+
 	c = ch;
 	write (1, &c, 1);
 	index++;

@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_d.c                                       :+:      :+:    :+:   */
+/*   ft_print_x.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/18 11:51:21 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/24 10:04:31 by gbeauman         ###   ########.fr       */
+/*   Created: 2021/11/24 09:56:57 by gbeauman          #+#    #+#             */
+/*   Updated: 2021/11/24 11:37:54 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	ft_print_num(int num, int index)
+int	ft_print_x(unsigned long num, int index)
 {
-	char	c;
+	char			*list;
+	int				i;
+	unsigned long	check;
 
-	c = num + 48;
-	write (1, &c, 1);
+	list = "abcdef";
+	i = 0;
+	check = 10;
+	while (check != num)
+	{
+		i++;
+		check++;
+	}
+	write (1, &list[i], 1);
 	index++;
 	return (index);
 }

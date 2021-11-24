@@ -6,7 +6,7 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 10:02:45 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/19 10:59:01 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/24 15:32:17 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
@@ -21,5 +21,9 @@ int	ft_check(char check, va_list argptr, int index)
 		index = ft_putnbr(va_arg(argptr, int), index);
 	else if (check == 'u')
 		index = ft_putnbr_u(va_arg(argptr, unsigned int), index);
+	else if (check == 'x')
+		index = ft_putnbr_x(va_arg(argptr, unsigned long), index);
+	else if (check == 'p')
+		index = ft_print_p(va_arg(argptr, unsigned long ), index);
 	return (index);
 }

@@ -6,14 +6,14 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 09:54:14 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/18 15:16:41 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/24 10:04:48 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
 int	ft_print_s(char *s, int index)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i])
