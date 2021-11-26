@@ -6,12 +6,12 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 09:50:33 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/24 11:36:06 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/25 11:04:48 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	ft_putnbr_x(unsigned long num, int index)
+int	ft_putnbr_x(unsigned int num, int index)
 {
 	if (num >= 0 && num <= 9)
 		index = ft_print_num(num, index);

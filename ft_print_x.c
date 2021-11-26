@@ -6,16 +6,16 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 09:56:57 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/24 11:37:54 by gbeauman         ###   ########.fr       */
+/*   Updated: 2021/11/25 11:03:56 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	ft_print_x(unsigned long num, int index)
+int	ft_print_x(unsigned int num, int index)
 {
 	char			*list;
 	int				i;
-	unsigned long	check;
+	unsigned int	check;
 
 	list = "abcdef";
 	i = 0;

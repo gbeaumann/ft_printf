@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_p.c                                       :+:      :+:    :+:   */
+/*   ft_print_x.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 11:49:52 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/25 11:21:29 by gbeauman         ###   ########.fr       */
+/*   Created: 2021/11/24 09:56:57 by gbeauman          #+#    #+#             */
+/*   Updated: 2021/11/25 11:16:33 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include	"ft_printf.h"
 
-int	ft_print_p(unsigned long str, int index)
+int	ft_print_ui(unsigned long num, int index)
 {
-	unsigned long	*add;
-	unsigned long	**ptr;
+	char			*list;
+	int				i;
+	unsigned long	check;
 
-	add = &str;
-	ptr = &add;
-	write (1, "0x", 2);
-	index = index + 2;
-	index = ft_putnbr_p(**ptr, index);
+	list = "abcdef";
+	i = 0;
+	check = 10;
+	while (check != num)
+	{
+		i++;
+		check++;
+	}
+	write (1, &list[i], 1);
+	index++;
 	return (index);
 }
