@@ -6,7 +6,7 @@
 #    By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/17 09:30:37 by gbeauman          #+#    #+#              #
-#    Updated: 2021/11/25 13:01:25 by gbeauman         ###   ########.fr        #
+#    Updated: 2022/03/09 09:35:10 by gbeauman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libftprintf.a

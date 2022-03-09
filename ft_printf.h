@@ -6,7 +6,7 @@
 /*   By: gbeauman <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 09:27:28 by gbeauman          #+#    #+#             */
-/*   Updated: 2021/11/25 13:01:53 by gbeauman         ###   ########.fr       */
+/*   Updated: 2022/03/09 09:35:39 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_PRINTF_H
@@ -16,7 +16,7 @@
 # include	<stdarg.h>
 # include	<unistd.h>
 
-int	main(void);
+//int	main(void);
 int	ft_printf(const char *str, ...);
 int	ft_check(char check, va_list argptr, int index);
 int	ft_print_s(char *s, int index);
